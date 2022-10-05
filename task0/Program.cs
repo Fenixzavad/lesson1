@@ -5,12 +5,16 @@
 // -3 -> 9 
 // -7 -> 49
 
-
-System.Console.WriteLine("Введите число >");
+int Prompt(string message)
+{
+System.Console.Write(message);
 string inputString = Console.ReadLine();
 int value = Convert.ToInt32(inputString);
+return value;
+}
 
 
+int value = Prompt("ВВедите число >");
 int square = value * value;
 System.Console.WriteLine($"Квадрат числа {value} равен {square}");
 
